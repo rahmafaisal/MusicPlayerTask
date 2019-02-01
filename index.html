@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: url(i.jpg);
+            background-size: cover;
+             
+        }
+      #control li
+      {
+         list-style-type: none;
+         display: inline;
+         text-align: center;
+         
+      }
+      #control li input
+      {
+        margin-top: 1%;
+        margin-right:15%;
+        margin-left: 5%;
+      }
+      #control
+      {
+          background-color: brown;
+           height: 9%;
+           border-radius:25%;
+      }
+      #songs li
+      {
+         margin: 1%;     
+   
+      }
+      #songs li a
+      { 
+         font-size: 20px;
+         color: black;
+          text-decoration: none;
+      }
+      #musicSpace
+      {
+       position: absolute;
+       top:15%;
+       left:35%;
+       height:300px;
+       width: 500px;
+       border-style: solid;
+       border-color: chocolate;
+       border-radius: 3%;
+    
+      }
+      #audio
+      {
+          margin-top:5%;
+          margin-left:15%; 
+      }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MusicPlayer</title>
+</head>
+<body>
+    <div id="musicSpace">
+    <audio id="audio" controls>
+       <source  id="mysrc" src="song1.mp3" type="audio/mpeg"></source>
+    </audio>
+    <ul id="control">
+        <li><input type="button" value="Shuffle" id="shuffle"></li>
+        <li><input type="button" value="Repet" id="repet"></li>
+        <li><input type="button" value="Play" id="play"></li>
+    </ul>
+    <ul id="songs">
+        <li><a id="0" href="#">song1</a></li>
+        <li><a id="1" href="#">song2</a></li>
+        <li><a id="2"href="#">song3</a></li>
+        <li><a id="3"href="#">song4</a></li>
+        <li><a id="4"href="#">song5</a></li>
+        </ul>
+    </div>
+</body>
+<script src=MusicPlay.js></script>
+</html>
